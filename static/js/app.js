@@ -44,8 +44,6 @@ function populateInfo(id){
    });
 };
 
-//var names = data.names; // Names data, or sample id assigned
-//var samples = data.samples; // Samples data, or bacterial data collected by id
 
 // Testing populateInfo() function
 // populateInfo('940');
@@ -117,5 +115,14 @@ function plotGraphs(id){
 // Testing plotGraphs() function
 // plotGraphs(940);
 
-
+// Loading in sample ids into the dropdown menu
+d3.json("../data/samples.json").then((data) => {
+   // Saving parts of data into separate variables
+   var names = data.names; // Names data, or sample id assigned
+   var node = document.getElementById("selDataset"); // Selecting the drop down menu by its element id
+   // Looping through names and add options to drop down menu
+   for (i = 0; i < names.length; i++){
+      node.innerHTML += `<option value="${names[i]}">${names[i]}</option>`
+   };
+});
 
