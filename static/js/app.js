@@ -24,7 +24,7 @@ HINT 2
 // To populate info panel of selected id
 function populateInfo(id){
    // Load in data from samples.json and match info based on id parameter
-   d3.json("/plotly-challenge/data/samples.json").then((data) => {
+   d3.json("https://m36418o.github.io/plotly-challenge/data/samples.json").then((data) => {
       // Saving parts of data into separate variables
       var metadata = data.metadata; // Metadata, or personal information
       var keys = [];
@@ -51,7 +51,7 @@ function populateInfo(id){
 // To populate graphic panels of selected id
 function plotGraphs(id){
    // load in data from samples.json and match data based on id parameter
-   d3.json("/plotly-challenge/data/samples.json").then((data) => {
+   d3.json("https://m36418o.github.io/plotly-challenge/data/samples.json").then((data) => {
       var samples = data.samples; // Samples data, or bacterial data collected by id
       var sampleValues = null;
       var otuIds = null;
@@ -116,7 +116,7 @@ function plotGraphs(id){
 // plotGraphs(940);
 
 // Loading in sample ids into the dropdown menu
-d3.json("/plotly-challenge/data/samples.json").then((data) => {
+d3.json("https://m36418o.github.io/plotly-challenge/data/samples.json").then((data) => {
    // Saving parts of data into separate variables
    var names = data.names; // Names data, or sample id assigned
    var node = document.getElementById("selDataset"); // Selecting the drop down menu by its element id
