@@ -1,4 +1,4 @@
-// To populate graphic panels of selected id
+// To plot wash frequency of selected id
 function plotGauge(id){
     // load in data from samples.json and match data based on id parameter
     d3.json("https://m36418o.github.io/plotly-challenge/data/samples.json").then((data) => {
