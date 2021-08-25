@@ -15,3 +15,7 @@ index.html - This is the homepage and holds the containers that gets populated b
 apps.js - This is the main JavaScript that populates and provides graphs regarding the sample subject selected.
 
 bonus.js - This is the side JavaScript that creates a basic gauge graph that shows the number of washing frequency of the sample subject.
+
+## About the Data
+
+Hulcr, J. et al.(2012) A Jungle in There: Bacteria in Belly Buttons are Highly Diverse, but Predictable. Retrieved from: http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/
