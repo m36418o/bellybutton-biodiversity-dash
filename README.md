@@ -1,8 +1,14 @@
-## Plotly Challenge
+# Belly Button Biodiversity Dashboard
+## Summary
+In this project we take an aim at building out our first fully online dashboard. The goal is to display the research data with a simple dropdown menu that allows the user to select the participant data they would like to view. The user will see the dashboard be populated with participant information and featured visualizations.
 
-This module covers the basics of using plotly.js to create dashboards by pulling data from existing dataset. The dashboard creates visualization on belly button bacterial samples taken during a research trial.
+Featured visualization includes
 
-### File contents
+* Top 10 prominent bacteria culture of the participant.
+* Number of times participant wash their belly button.
+* Bubble chart displaying all the operational taxonomic units of the biodiversity of the participant. 
+
+## File contents
 
 index.html - This is the homepage and holds the containers that gets populated by the JavaScript files.
 
